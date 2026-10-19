@@ -6,11 +6,10 @@
     <title>HopeGrid | Empowering Communities</title>
     <style>
         :root {
-            --bg-color: #2f0749;
-            --text-color: #afafaf;
-            --accent-color: #fc97af;
-            --header-text-color: #888888;
-            --muted-color: #acacac;
+            --bg-color: #ffffff;
+            --text-color: #272323;
+            --accent-color: #ff004c;
+            --muted-color: #9648ad;
             --border-color: #e0e0e0;
         }
 
@@ -36,7 +35,7 @@
             padding-right: 30px;
             padding-left:30px;
             border-bottom: 1px solid var(--border-color);
-            background-color: #fcfcfc;
+            background-color:#e6bfbc;
         }
 
         .logo {
@@ -49,14 +48,17 @@
 
         nav a {
             margin-left: 2rem;
+            font-weight: bold;
             text-decoration: none;
-            color: var(--header-text-color);
+            color: var(--muted-color);
             font-size: 0.95rem;
             transition: color 0.2s ease;
         }
 
         nav a:hover, nav a.active {
-            color: var(--text-color);
+            color: #3f0a50;
+            transition: color 0.5s linear;
+
             
         }
 
@@ -97,10 +99,15 @@
             transition: opacity 0.2s ease;
             border: none;
             cursor: pointer;
+            border: 1px solid var(--bg-color);
         }
 
         .btn:hover {
             opacity: 0.9;
+            background-color: var(--bg-color);
+            color: var(--muted-color);
+            border: 1px solid var(--muted-color);
+            transition: all 0.4s ease;
         }
 
         .btn-secondary {
@@ -108,6 +115,13 @@
             color: var(--text-color);
             border: 1px solid var(--text-color);
             margin-left: 1rem;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: 1px solid var(--bg-color);
+            transition: all 0.4s ease;
         }
 
         section {
@@ -143,6 +157,31 @@
             font-size: 0.95rem;
         }
 
+        .image2, .image1 {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+        }
+        
+        .image1 img, .image2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image2 img {
+            border: 3px solid var(--muted-color);
+        }
+
+        .image1 img {
+            border: 3px solid var(--accent-color);
+        }
+
+        .image1 img:hover, .image2 img:hover {
+            border-color: rgb(4, 49, 94);
+            transition: all 0.4s ease;
+        }
+        
+
         .counter-container {
             display: flex;
             gap: 3rem;
@@ -160,43 +199,13 @@
             color: var(--muted-color);
         }
 
-        form {
-            display: grid;
-            gap: 1rem;
-            max-width: 500px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .form-group input, .form-group textarea {
-            padding: 0.75rem;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-family: inherit;
-            font-size: 0.95rem;
-            background: transparent;
-            color: inherit;
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            outline: 1px solid var(--text-color);
-        }
-
         footer {
             text-align: center;
             padding: 4rem 1.5rem;
             border-top: 1px solid var(--border-color);
             font-size: 0.85rem;
-            color: var(--muted-color);
+            color: var(--bg-color);
+            background-color: var(--text-color);
         }
 
         @media (max-width: 600px) {
@@ -238,57 +247,45 @@
         <section id="about">
             <h2>Our Focus Areas</h2>
             <div class="grid">
-                <div class="card">
-                    <h3>Clean Energy Blueprint</h3>
-                    <p>Open-source, highly localizable schematics for building micro-grid solar collectors using recycled elements.</p>
+                <div class="card" style="border-bottom: 3px solid #ff004c;">
+                    <h3>The Seniors</h3>
+                    <p>We take ingredients--such as sunflower butter, jelly, and bread--along with packing supplies like boxes and baggies, set up everything, and allow the seniors to make the sandwiches.</p>
                 </div>
-                <div class="card">
-                    <h3>Water Distribution</h3>
-                    <p>Low-cost gravity fed filtration layouts deployed directly into regional agricultural cooperatives.</p>
+                <div class="card" style="border-bottom: 3px solid #9648ad;">
+                    <h3>The Streets</h3>
+                    <p>We donate these sandwiches to places like Sheperd's Table in Silver Spring, MD, where they further distribute them to those in need.</p>
                 </div>
-                <div class="card">
-                    <h3>Digital Literacy</h3>
-                    <p>Offline-first localized educational repositories distributed via physical low-power micro servers.</p>
+                <div class="card image1">
+                    <img src="Giving Back 1 (1).jpg" width="" height="">
+                </div>
+                <div class="card image2">
+                    <img src="IMG_5264.jpg" width="" height="">
                 </div>
             </div>
         </section>
 
         <section id="impact">
             <h2>Real-world Metrics</h2>
-            <p style="color: var(--muted-color); margin-bottom: 2rem;">Quantifiable progress driven by global open-source contributors and resource deployments.</p>
+            <p style="color: var(--muted-color); margin-bottom: 2rem;">Everyone starts small; that doesn't mean they can't grow. This is our impact by the numbers so far: </p>
             <div class="counter-container">
                 <div class="counter-box">
-                    <h3 class="counter" data-target="142">0</h3>
-                    <p>Villages Empowered</p>
+                    <h3 class="counter" data-target="1">0</h3>
+                    <p>Events</p>
                 </div>
                 <div class="counter-box">
-                    <h3 class="counter" data-target="8500">0</h3>
-                    <p>Individuals Served</p>
+                    <h3 class="counter" data-target="125">0</h3>
+                    <p>Sandwiches Made (~)</p>
                 </div>
                 <div class="counter-box">
-                    <h3 class="counter" data-target="34">0</h3>
-                    <p>Active Projects</p>
+                    <h3 class="counter" data-target="125">0</h3>
+                    <p>Packs Donated (~)</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Get in Touch</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">How would you like to help?</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <p>As of currently, please contact <a href="mailto:lukedsouza1119@gmail.com">Luke D'Souza</a> for any inquiries. Donation/fundraising page COMING SOON!</p>
         </section>
     </main>
 
@@ -355,13 +352,6 @@
         if(impactSection) {
             observer.observe(impactSection);
         }
-
-        // Handle simple form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for reaching out. A project coordinator will connect with you via email shortly.');
-            e.target.reset();
-        });
     </script>
 </body>
 </html>
