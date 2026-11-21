@@ -6,6 +6,10 @@
     --border-color: #e0e0e0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
